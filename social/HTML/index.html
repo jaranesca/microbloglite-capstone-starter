@@ -45,34 +45,16 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow */
 }
 .blog-logo {
-    width: 225px;
+    width: 200px;
     height: auto;
 	margin-bottom: 20px;
 }
-header {
-    background-color:#A0521A; /* Change this color to whatever you like */
-    padding: 10px 0;
-}
-
 header nav ul li a {
     color: white; /* Change the text color if needed */
 }
 
 header nav ul li a span img {
     filter: brightness(0) invert(1); /* Invert the icon color to white */
-}
-
-.header-data {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.search-button i {
-    color: #A0521A; /* Change this to your desired color */
-}
-.icon-search{
-	padding-left:7px ;
 }
 .nav-icons {
 padding-bottom: 10px;
@@ -133,50 +115,46 @@ padding-bottom: 10px;
 .custom-background {
         background-color: #A0521A;
     }
-.custom-button{
-	border: none; /* Remove border */
-	text-decoration: none;
-}
+
 .number-circle{
 	background-color: #A0521A;
 }
 
-
-
 	</style>
 
 <body>	
+
 
 	<div class="wrapper">	
 		<header>
 			<div class="container">
 				<div class="header-data">
 					<div class="logo">
-						<a href="index.html" title=""><img src="images/icons(2).png" alt=""></a>
+						<a href="index.html" title=""><img src="images/icons(2).png" alt="" class="icon-logo"></a>
 					</div><!--logo end-->
 					<div class="search-bar">
 						<form>
 							<input type="text" name="search" placeholder="Search...">
-							<button type="submit"><img src="images/search.svg" alt="" class="icon-search" ></button>
+							<button type="submit"><i class="la la-search"></i></button>
 						</form>
 					</div><!--search-bar end-->
 					<nav>
 						<ul>
 							<li>
 								<a href="index.html" title="">
-									<span><img src="images/homeicon.svg" alt="" class="nav-icons" ></span>
+									<span><img src="images/icon1.png" alt=""></span>
 									Home
 								</a>
 							</li>
 							<li>
 								<a href="companies.html" title="">
-									<span><img src="images/navparty.svg" alt=""class="nav-icons" ></span>
+									<span><img src="images/icon2.png" alt=""></span>
 									Tea Parties
 								</a>
 							</li>
 							<li>
 								<a href="#" title="" class="not-box-openm">
-									<span><img src="images/navmessage.svg" alt="" class="nav-icons" ></span>
+									<span><img src="images/icon6.png" alt=""></span>
 									Messages
 								</a>
 								<div class="notification-box msg" id="message">
@@ -223,7 +201,7 @@ padding-bottom: 10px;
 							</li>
 							<li>
 								<a href="#" title="" class="not-box-open">
-									<span><img src="images/navnoti.svg" alt="" class="nav-icons" ></span>
+									<span><img src="images/icon7.png" alt=""></span>
 									Notification
 								</a>
 								<div class="notification-box noti" id="notification">
@@ -313,6 +291,8 @@ padding-bottom: 10px;
 			</div>
 		</header><!--header end-->	
 
+			
+
 		<main>
 			<div class="main-section">
 				<div class="container">
@@ -328,8 +308,8 @@ padding-bottom: 10px;
 												</div>
 											</div><!--username-dt end-->
 											<div class="user-specs">
-												<h3>Jaranesca</h3>
-												<span class="user-bio">Hey there Darling.</span>
+												<h3 class="name-profile">Jaranesca</h3>
+
 											</div>
 										</div><!--user-profile end-->
 										<ul class="user-fw-status">

@@ -54,7 +54,7 @@ async function fetchPosts() {
         const response = await fetch('http://microbloglite.us-east-2.elasticbeanstalk.com/api/posts?limit=100&offset=0', {
             headers: {
                 'accept': 'application/json',
-                'Authorization': 'Bearer'
+                'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkphcmFuZXNjYUIiLCJpYXQiOjE3MTk1OTIzMDcsImV4cCI6MTcxOTY3ODcwN30.X7SmG734bozePyySyL_5ARanYMk92JZaGFNEqDo_akY'
             }
         });
         if (!response.ok) {
@@ -75,7 +75,7 @@ async function createNewPost(postText) {
             method: 'POST',
             headers: {
                 'accept': 'application/json',
-                'Authorization': '',
+                'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkphcmFuZXNjYUIiLCJpYXQiOjE3MTk1OTIzMDcsImV4cCI6MTcxOTY3ODcwN30.X7SmG734bozePyySyL_5ARanYMk92JZaGFNEqDo_akY ',
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({ 'text': postText })
