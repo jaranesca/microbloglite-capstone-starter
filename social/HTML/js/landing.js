@@ -22,12 +22,17 @@ document.addEventListener('DOMContentLoaded', () => {
         // loginForm.querySelector("button[type='submit']").disabled = true;
         // try {
         //     await login(loginData);
+        //     // Redirect to index.html after successful login
+        //     window.location.href = "social/html/index.html";
         // } catch (error) {
         //     console.error(error.message);
         //     // Display error notification to the user
         // } finally {
         //     loginForm.querySelector("button[type='submit']").disabled = false;
         // }
+
+        // Simulate successful login redirect
+        window.location.href = "social/HTML/index.html"; // Remove this line and uncomment the above block after implementing actual login logic
     });
 
     // Toggle to sign-up mode
@@ -59,12 +64,18 @@ document.addEventListener('DOMContentLoaded', () => {
             // form.querySelector("button[type='submit']").disabled = true;
             // try {
             //     await signup(signupData);
+            //     // Redirect to index.html after successful signup
+            //     window.location.href = "social/html/index.html";
             // } catch (error) {
             //     console.error(error.message);
             //     // Display error notification to the user
             // } finally {
             //     form.querySelector("button[type='submit']").disabled = false;
             // }
+
+            // Simulate successful signup redirect
+            window.location.href = "social/HTML/index.html"; // Remove this line and uncomment the above block after implementing actual signup logic
         });
     });
 });
+
